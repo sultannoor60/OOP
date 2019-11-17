@@ -1,3 +1,8 @@
+
+2.22 What does the following code print?
+
+
+
 #include<iostream>
 using namespace std;
 main(){
