@@ -1,3 +1,8 @@
+
+2.20 (Diameter, Circumference and Area of a Circle) Write a program that reads in the radius of
+a circle as an integer and prints the circle’s diameter, circumference and area. Use the constant value
+3.14159 for π. Do all calculations in output statements.
+
 #include<iostream>
 using namespace std;
 main(){
