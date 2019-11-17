@@ -1,3 +1,14 @@
+
+2.23 (Largest and Smallest Integers) Write a program that reads in five integers and determines
+and prints the largest and the smallest integers in the group. Use only the programming techniques
+you learned in this chapter
+
+
+
+
+
+
+
 #include<iostream>
 using namespace std;
 main(){
