@@ -1,41 +1,41 @@
 #include <iostream>
 #include <string>
-
+using namespace std;
 class MotorVehicle {
 
 public:
 
-   MotorVehicle( std::string m, std::string ft, int y ) {
-      setMake( m );
-      setFuelType( ft );
-      setYearOfManufacture( y );
+   MotorVehicle(string a, string b, int c ) {
+      setMake( a );
+      setFuelType( b );
+      setYearOfManufacture( c );
    }
 
-   void setMake( std::string m ) {
+   void setMake( string a ) {
       make = m;
    }
 
-   void setFuelType( std::string ft ) {
-      fuelType = ft;
+   void setFuelType( string a ) {
+      fuelType = a;
    }
 
-   void setYearOfManufacture( int y ) {
-      yearOfManufacture = y;
+   void setYearOfManufacture( int a ) {
+      yearOfManufacture = a;
    }
 
-   void setColor( std::string c ) {
-      color = c;
+   void setColor( string a ) {
+      color = a;
    }
 
-   void setEngineCapacity( int ec ) {
-      engineCapacity = ec;
+   void setEngineCapacity( int a ) {
+      engineCapacity = a;
    }
 
-   std::string getMake() const {
+   string getMake() const {
       return make;
    }
 
-   std::string getFuelType() const {
+   string getFuelType() const {
       return fuelType;
    }
 
@@ -43,7 +43,7 @@ public:
       return yearOfManufacture;
    }
 
-   std::string getColor() const {
+   string getColor() const {
       return color;
    }
 
@@ -52,20 +52,30 @@ public:
    }
 
    void displayCarDetails() const {
-      std::cout << "CAR DETAILS"
+   cout << "CAR DETAILS"
          << "\nMake:                " << make
          << "\nFuel type:           " << fuelType
          << "\nYear of manufacture: " << yearOfManufacture
          << "\nColor:               " << color
          << "\nEngine capacity:     " << engineCapacity
-         << std::endl;
+         << endl;
    }
 
 private:
 
-   std::string make;
-   std::string fuelType;
+   string make;
+   string fuelType;
    int yearOfManufacture;
-   std::string color;
+   string color;
    int engineCapacity;
 };
+main(){
+   MotorVehicle ms("prado","petrol",2004){
+      cout<<"enter car colour: ";
+      int a;
+      cin>>a;
+      setColor( a );
+      displayCarDetails();
+   }
+      
+      
