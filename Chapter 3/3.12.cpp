@@ -1,28 +1,28 @@
 #include <iostream>
-#include <iostream>
 
+using namespace std;
 class Date {
 
 public:
 
-   Date( int m, int d, int y ) {
-      setMonth( m );
-      setDay( d );
-      setYear( y );
+   Date( int a, int b, int c ) {
+      setMonth( a );
+      setDay( b );
+      setYear( c );
    }
 
-   void setMonth( int m ) {
-      month = m;
-      if ( m < 1 ) month = 1;
-      if ( m > 12 ) month = 1;
+   void setMonth( int a ) {
+      month = a;
+      if ( a < 1 ) month = 1;
+      if ( a > 12 ) month = 1;
    }
 
-   void setDay( int d ) {
-      day = d;
+   void setDay( int a ) {
+      day = a;
    }
 
-   void setYear( int y ) {
-      year = y;
+   void setYear( int a ) {
+      year = a;
    }
 
    int getMonth() const {
@@ -38,7 +38,7 @@ public:
    }
 
    void displayDate() const {
-      std::cout << month << '/' << day << '/' << year << std::endl;
+      cout << month << '/' << day << '/' << year << endl;
    }
 
 private:
@@ -48,18 +48,17 @@ private:
    int year;
 };
 
-using namespace std;
 
 int main() {
 
    Date date( 11, 8, 1983 );
 
-   cout << "Initial date: ";
+   cout << "initial date is: ";
    date.displayDate();
 
    date.setMonth( 13 );
 
-   cout << "Modified date: ";
+   cout << "modified date is: ";
    date.displayDate();
 
    return 0;
