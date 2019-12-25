@@ -1,0 +1,16 @@
+#include<iostream>
+using namespace std;
+intpower(int m, int l){
+	int r=1;
+	while(l!=0){
+		cout<<m<<" * "<<m<<"  --  ";
+		r *=m;
+		--l;
+}cout<<"\n Result is: "<<r;}
+int main(){
+	int a,b;
+	cout<<"PLZ Enter an integer(base): "<<endl;
+	cin>>a;
+	cout<<" PLZ Enter power of integer(exponent): "<<endl;
+	cin>>b;
+	intpower(a,b);}
